@@ -8,6 +8,7 @@ body {
     font-family: sans-serif;
     overflow: hidden;
     background-image: url(grass.jpg);
+    cursor: none;
 }
 
 #cursor {
@@ -15,7 +16,13 @@ body {
     box-sizing: border-box;
     transition: 0.4s;
     transform: translate(-50%,-50%);
-    
+    pointer-events: none;
+}
+#cursor2 {
+    position: absolute;
+    box-sizing: border-box;
+    transition: 0s;
+    transform: translate(-50%, -50%);
     pointer-events: none;
 }
 img {
@@ -29,4 +36,9 @@ img {
 }
 #cat {
     width: 100px;
+    
+}
+
+#mouse {
+    width: 50px;
 }

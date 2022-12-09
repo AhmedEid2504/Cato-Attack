@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+    background-image: url(grass.jpg);
+}
+
+#cursor {
+    position: absolute;
+    box-sizing: border-box;
+    transition: 0.4s;
+    transform: translate(-50%,-50%);
+    
+    pointer-events: none;
+}
+img {
+    width: 500px;
+    
+}
+.bush {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+#cat {
+    width: 100px;
+}
